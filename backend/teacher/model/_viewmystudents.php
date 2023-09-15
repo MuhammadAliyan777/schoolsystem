@@ -1,0 +1,25 @@
+<?php
+
+include "controller/connection.php";
+$teacher_id = $_SESSION['teacher_id'];
+$sql = "SELECT * FROM `classes` WHERE `teacher_id` = $teacher_id";
+$res = mysqli_query($conn,$sql);
+$row = mysqli_fetch_assoc($res);
+$grade = $row['grade'];
+$sql = "SELECT * FROM `student` WHERE `grade` = $grade";
+$res = mysqli_query($conn,$sql);
+
+ 
+
+if(isset($_POST['search_btn']))
+{
+    $id = $_POST['by_id'];
+    $name = $_POST['by_name'];
+    $teacher_name = $_POST['by_teacher'];
+
+    $que = "SELECT * FROM `student` WHERE id LIKE $id OR class_name LIKE '$name' OR teacher_name LIKE '$teacher_name'";
+    $res = mysqli_query($conn,$que);
+    header('Location: my_class.php');
+}
+
+?>
