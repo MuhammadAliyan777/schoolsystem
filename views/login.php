@@ -59,7 +59,7 @@
             <br>
 
             <div class="form-group">
-              <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required="true" />
+              <input  type="email" class="form-control" id="email" name="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required="true" />
             </div>
             <div class="form-group">
               <input type="password" class="form-control" id="pass" name="pass" placeholder="Enter Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Password'" required="true" />

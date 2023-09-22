@@ -66,19 +66,19 @@ include "model/_addteacher.php";
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Faculty Roll ID <span class="login-danger">*</span></label>
-                                                <input type="number" name="roll" class="form-control" placeholder="Faculty Roll ID">
+                                                <input required type="number" name="roll" class="form-control" placeholder="Faculty Roll ID">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Name <span class="login-danger">*</span></label>
-                                                <input name="name" type="text" class="form-control" placeholder="Enter Name">
+                                                <input id="name" required name="name" type="text" class="form-control" placeholder="Enter Name">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Gender <span class="login-danger">*</span></label>
-                                                <select name="gender" class="form-control select">
+                                                <select required name="gender" class="form-control select">
                                                     <option>Male</option>
                                                     <option>Female</option>
                                                     <option>Others</option>
@@ -88,37 +88,37 @@ include "model/_addteacher.php";
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Date Of Birth <span class="login-danger">*</span></label>
-                                                <input name="dob" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
+                                                <input id="dob" required name="dob" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Mobile <span class="login-danger">*</span></label>
-                                                <input name="phone" type="text" class="form-control" placeholder="Enter Phone">
+                                                <input id="phone" required name="phone" type="text" class="form-control" placeholder="Enter Phone">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Age <span class="login-danger">*</span></label>
-                                                <input name="age" min="18" type="number" class="form-control" placeholder="Enter Age">
+                                                <input id="age" required name="age" min="18" type="number" class="form-control" placeholder="Enter Age">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Joining Date <span class="login-danger">*</span></label>
-                                                <input name="join_date" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
+                                                <input  required name="join_date" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4 local-forms">
                                             <div class="form-group">
                                                 <label>Qualification <span class="login-danger">*</span></label>
-                                                <input name="qualification" class="form-control" type="text" placeholder="Enter Qualification">
+                                                <input required name="qualification" class="form-control" type="text" placeholder="Enter Qualification">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Experience <span class="login-danger">*</span></label>
-                                                <input name="experience" class="form-control" type="text" placeholder="Enter Experience">
+                                                <input required name="experience" class="form-control" type="text" placeholder="Enter Experience">
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -127,7 +127,7 @@ include "model/_addteacher.php";
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Email <span class="login-danger">*</span></label>
-                                                <input name="email" type="text" class="form-control" placeholder="Enter Email">
+                                                <input id="email" required name="email" type="text" class="form-control" placeholder="Enter Email">
                                             </div>
                                         </div>
                                          
@@ -139,7 +139,7 @@ include "model/_addteacher.php";
                                         <div class="col-12">
                                             <div class="form-group local-forms">
                                                 <label>Address <span class="login-danger">*</span></label>
-                                                <input name="address" type="text" class="form-control" placeholder="Enter address">
+                                                <input required name="address" type="text" class="form-control" placeholder="Enter address">
                                             </div>
                                         </div>
                       
@@ -159,7 +159,59 @@ include "model/_addteacher.php";
 
     </div>
 
-
+    <script>
+         const dob = document.getElementById("dob");
+         const age = document.getElementById("age");
+         const phone = document.getElementById("phone");
+         const email = document.getElementById("email");
+         const nameInput = document.getElementById("name"); // Replace "name" with your input field's ID
+         const namePattern = /^[A-Za-z\s'-]+$/;
+         const dobpattern = /^\d{4}-\d{2}-\d{2}$/;
+         const agepattern = /^[0-9]{1,3}$/;
+         const phonepattern = /^\d{10}$/;
+         const emailpattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+         
+         nameInput.addEventListener("input", function() {
+             if (!namePattern.test(nameInput.value)) {
+                 nameInput.setCustomValidity("Please enter a valid name.");
+             } else {
+                 nameInput.setCustomValidity("");
+             }
+         });
+        
+         email.addEventListener("input", function() {
+             if (!emailpattern.test(email.value)) {
+                email.setCustomValidity("Please enter a valid email.");
+             } else {
+                email.setCustomValidity("");
+             }
+         });
+         phone.addEventListener("input", function() {
+             if (!phonepattern.test(phone.value)) {
+                phone.setCustomValidity("Please enter a valid phone no.");
+             } else {
+                phone.setCustomValidity("");
+             }
+         });
+         
+         
+         dob.addEventListener("input", function() {
+             if (!dobpattern.test(dob.value)) {
+                dob.setCustomValidity("Please enter a valid Dob.");
+             } else {
+                dob.setCustomValidity("");
+             }
+         });
+         age.addEventListener("input", function() {
+             if (!agepattern.test(age.value)) {
+                age.setCustomValidity("Please enter a valid age.");
+             } else {
+                age.setCustomValidity("");
+             }
+         });
+          
+         
+     </script>
     <script src="../assets//js/jquery-3.6.0.min.js"></script>
 
     <script src="../assets//plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

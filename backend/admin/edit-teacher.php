@@ -66,21 +66,21 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Name <span class="login-danger">*</span></label>
-                                                <input name="name" class="form-control" type="text" value="<?php $name = $row['name']; echo $name;?>">
+                                                <input required name="name" class="form-control" type="text" value="<?php $name = $row['name']; echo $name;?>">
                                             </div>
                                         </div>
                                   
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Email <span class="login-danger">*</span></label>
-                                                <input name="email" class="form-control" type="text" value="<?php $email = $row['email']; echo $email;?>">
+                                                <input required name="email" class="form-control" type="text" value="<?php $email = $row['email']; echo $email;?>">
                                             </div>
                                         </div>
 
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Gender <span class="login-danger">*</span></label>
-                                                <select name="gender" class="form-control select">
+                                                <select required name="gender" class="form-control select">
                                                     <option><?php  $gender = $row['gender']; echo $gender;?></option>
                                                     <option>Female</option>
                                                     <option>Male</option>
@@ -91,33 +91,33 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Date Of Birth <span class="login-danger">*</span></label>
-                                                <input name="dob" value="<?php  $dob = $row['dob']; echo $dob;?>" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
+                                                <input required name="dob" value="<?php  $dob = $row['dob']; echo $dob;?>" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
                                             </div>
                                         </div>
 
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Phone No</label>
-                                                <input name="phone_no" class="form-control" type="text" value="<?php $phone_no = $row['mobile']; echo $phone_no;?>">
+                                                <input required name="phone_no" class="form-control" type="text" value="<?php $phone_no = $row['mobile']; echo $phone_no;?>">
                                             </div>
                                         </div>
                                         
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Join Date</label>
-                                                <input name="join_date" class="form-control" type="text" value="<?php $join_date = $row['join_date']; echo $join_date;?>">
+                                                <input required name="join_date" class="form-control" type="text" value="<?php $join_date = $row['join_date']; echo $join_date;?>">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Qualification <span class="login-danger">*</span></label>
-                                                <input name="qualification" class="form-control"  type="text" value="<?php $qualification = $row['qualification']; echo $qualification;?>">
+                                                <input required name="qualification" class="form-control"  type="text" value="<?php $qualification = $row['qualification']; echo $qualification;?>">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Experience </label>
-                                                <input name="experience" class="form-control" type="text" value="<?php $experience = $row['experience']; echo $experience;?>">
+                                                <input required name="experience" class="form-control" type="text" value="<?php $experience = $row['experience']; echo $experience;?>">
                                             </div>
                                         </div>
                                      
@@ -126,14 +126,14 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Faculty Id <span class="login-danger">*</span></label>
-                                                <input name="faculty_id" class="form-control"  type="text" value="<?php $faculty_id = $row['faculty_roll_id']; echo $faculty_id;?>">
+                                                <input required name="faculty_id" class="form-control"  type="text" value="<?php $faculty_id = $row['faculty_roll_id']; echo $faculty_id;?>">
                                             </div>
                                         </div>
                                        
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Address <span class="login-danger">*</span></label>
-                                                <input name="address" class="form-control"  type="text" value="<?php $address = $row['address']; echo $address;?>">
+                                                <input required name="address" class="form-control"  type="text" value="<?php $address = $row['address']; echo $address;?>">
                                             </div>
                                         </div>
 

@@ -66,7 +66,7 @@
                                         <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
                                                 <label>Class Name <span class="login-danger">*</span></label>
-                                                <input name="class_name" class="form-control" type="text" value="<?php $class_name = $row['class_name']; echo $class_name;?>">
+                                                <input required name="class_name" class="form-control" type="text" value="<?php $class_name = $row['class_name']; echo $class_name;?>">
                                             </div>
                                         </div>
                                        
@@ -77,7 +77,7 @@
                                                     $res2 = mysqli_query($conn,$sql);
                                                                 ?>
                                                 <label>Teachers <span class="login-danger">*</span></label>
-                                                <select name="teacher_name" class="form-control select">
+                                                <select required name="teacher_name" class="form-control select">
                                                     <option>Select Teachers</option>
                                                     <?php
                                                     while ($row2 = mysqli_fetch_assoc($res2)) {
@@ -90,7 +90,7 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Grade<span class="login-danger">*</span></label>
-                                                <input name="grade" class="form-control" type="number" value="<?php $grade = $row['grade']; echo $grade;?>">
+                                                <input required name="grade" class="form-control" type="number" value="<?php $grade = $row['grade']; echo $grade;?>">
 
                                             </div>
                                         </div>

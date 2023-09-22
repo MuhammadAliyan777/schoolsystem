@@ -66,14 +66,14 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Name <span class="login-danger">*</span></label>
-                                                <input name="name" class="form-control" type="text" value="<?php $name = $row['name']; echo $name;?>">
+                                                <input required name="name" class="form-control" type="text" value="<?php $name = $row['name']; echo $name;?>">
                                             </div>
                                         </div>
                                   
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Gender <span class="login-danger">*</span></label>
-                                                <select name="gender" class="form-control select">
+                                                <select required name="gender" class="form-control select">
                                                     <option><?php  $gender = $row['gender']; echo $gender;?></option>
                                                     <option>Female</option>
                                                     <option>Male</option>
@@ -84,20 +84,20 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Date Of Birth <span class="login-danger">*</span></label>
-                                                <input name="dob" value="<?php  $dob = $row['dob']; echo $dob;?>" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
+                                                <input required name="dob" value="<?php  $dob = $row['dob']; echo $dob;?>" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Roll </label>
-                                                <input name="roll" class="form-control" type="text" value="<?php $roll = $row['roll_no']; echo $roll;?>">
+                                                <input required name="roll" class="form-control" type="text" value="<?php $roll = $row['roll_no']; echo $roll;?>">
                                             </div>
                                         </div>
                                      
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Religion <span class="login-danger">*</span></label>
-                                                <select name="religion" class="form-control select">
+                                                <select required name="religion" class="form-control select">
                                                     <option><?php  $religion = $row['religion']; echo $religion;?></option>
                                                     <option>Hindu</option>
                                                     <option>Christian</option>
@@ -108,20 +108,20 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>E-Mail <span class="login-danger">*</span></label>
-                                                <input name="email" class="form-control"  type="text" value="<?php $email = $row['email']; echo $email;?>">
+                                                <input required name="email" class="form-control"  type="text" value="<?php $email = $row['email']; echo $email;?>">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Class <span class="login-danger">*</span></label>
-                                                <input name="class" class="form-control"  type="text" value="<?php $class = $row['class']; echo $class;?>">
+                                                <input required name="class" class="form-control"  type="text" value="<?php $class = $row['class']; echo $class;?>">
                                             </div>
                                         </div>
                                        
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Phone No</label>
-                                                <input name="phone_no" class="form-control" type="text" value="<?php $phone_no = $row['phone_no']; echo $phone_no;?>">
+                                                <input required name="phone_no" class="form-control" type="text" value="<?php $phone_no = $row['phone_no']; echo $phone_no;?>">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">

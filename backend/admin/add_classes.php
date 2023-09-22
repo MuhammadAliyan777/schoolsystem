@@ -65,7 +65,7 @@ $school_id = $_SESSION['school_id'];?>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label> Class Name <span class="login-danger">*</span></label>
-                                                <input name="class_name" class="form-control" type="text" placeholder="Enter Class Name">
+                                                <input required name="class_name" class="form-control" type="text" placeholder="Enter Class Name">
                                             </div>
                                         </div>
                                               
@@ -76,7 +76,7 @@ $school_id = $_SESSION['school_id'];?>
                                                     $res = mysqli_query($conn,$sql);
                                                                 ?>
                                                 <label>Teachers <span class="login-danger">*</span></label>
-                                                <select name="teacher_name" class="form-control select">
+                                                <select required name="teacher_name" class="form-control select">
                                                     <option>Select Teachers</option>
                                                     <?php
                                                     while ($row = mysqli_fetch_assoc($res)) {
@@ -89,7 +89,7 @@ $school_id = $_SESSION['school_id'];?>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Grade<span class="login-danger">*</span></label>
-                                                <input name="grade" class="form-control" type="number" min="1" max="10" placeholder="Enter Grade">
+                                                <input required name="grade" class="form-control" type="number" min="1" max="10" placeholder="Enter Grade">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">

@@ -66,26 +66,26 @@
                                         <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
                                                 <label>School Name <span class="login-danger">*</span></label>
-                                                <input name="school_name" class="form-control" type="text" value="<?php $address = $row['school_name']; echo $address;?>">
+                                                <input required name="school_name" class="form-control" type="text" value="<?php $address = $row['school_name']; echo $address;?>">
                                             </div>
                                         </div>
                                   
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>School Address <span class="login-danger">*</span></label>
-                                                <input name="school_address" class="form-control" type="text" value="<?php $address = $row['school_address']; echo $address;?>">
+                                                <input required name="school_address" class="form-control" type="text" value="<?php $address = $row['school_address']; echo $address;?>">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Admin Name <span class="login-danger">*</span></label>
-                                                <input name="admin_name" class="form-control" type="text" value="<?php $admin_name = $row['admin_name']; echo $admin_name;?>">
+                                                <input required name="admin_name" class="form-control" type="text" value="<?php $admin_name = $row['admin_name']; echo $admin_name;?>">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Admin Email <span class="login-danger">*</span></label>
-                                                <input name="admin_email" class="form-control" type="text" value="<?php $admin_email = $row['admin_email']; echo $admin_email;?>">
+                                                <input required name="admin_email" class="form-control" type="text" value="<?php $admin_email = $row['admin_email']; echo $admin_email;?>">
                                             </div>
                                         </div>
                                          

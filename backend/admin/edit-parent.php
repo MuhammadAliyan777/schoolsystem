@@ -66,14 +66,14 @@
                                         <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
                                                 <label>Parent Name <span class="login-danger">*</span></label>
-                                                <input name="parent_name" class="form-control" type="text" value="<?php $parent_name = $row['parent_name']; echo $parent_name;?>">
+                                                <input required name="parent_name" class="form-control" type="text" value="<?php $parent_name = $row['parent_name']; echo $parent_name;?>">
                                             </div>
                                         </div>
                                   
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Parent Email <span class="login-danger">*</span></label>
-                                                <input name="parent_email" class="form-control" type="text" value="<?php $parent_email = $row['email']; echo $parent_email;?>">
+                                                <input required name="parent_email" class="form-control" type="text" value="<?php $parent_email = $row['email']; echo $parent_email;?>">
                                             </div>
                                         </div>
                                          

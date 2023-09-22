@@ -93,7 +93,7 @@ ob_start();
                     placeholder="Enter your name"
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Enter your name'"
-                    required=""
+                    required 
                   />
                 </div>
                 <div class="form-group">
@@ -105,7 +105,7 @@ ob_start();
                     placeholder="Enter email address"
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Enter email address'"
-                    required=""
+                    required 
                   />
                 </div>
                 <div class="form-group">
@@ -117,7 +117,7 @@ ob_start();
                     placeholder="Enter Subject"
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Enter Subject'"
-                    required=""
+                    required 
                   />
                 </div>
               </div>
@@ -131,7 +131,7 @@ ob_start();
                     placeholder="Enter Message"
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Enter Message'"
-                    required=""
+                    required 
                   ></textarea>
                 </div>
               </div>

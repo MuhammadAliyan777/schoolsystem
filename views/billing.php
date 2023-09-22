@@ -95,7 +95,7 @@ if(isset($_POST['send_btn']))
                 <form action="" method="post">
                 <h4 class="mt-3 mb-2">Plan # <?php echo $id; ?></h4>
                  <h4 class="mt-3 mb-2">Plan Name: <?php if($id == 1){echo "Starter Package";} if($id == 2) {echo "VIP Package";} if($id==3) {echo"Premium Package";}?></h4>
-                 <h4 class="mt-3 mb-2">Duration ( In Years ) <br><input style="outline: 0;" value="<?php if($inp=="" || $inp==0 || $inp==null){$inp = 1;} echo $inp; ?>"  type="number" required name="duration" min="1" max="5"><input class="btn btn-dark ml-3"  name="up_btn" type="submit" value="Update"></h4>
+                 <h4 class="mt-3 mb-2">Duration ( In Years ) <br><input  style="outline: 0;" value="<?php if($inp=="" || $inp==0 || $inp==null){$inp = 1;} echo $inp; ?>"  type="number" required name="duration" min="1" max="5"><input class="btn btn-dark ml-3"  name="up_btn" type="submit" value="Update"></h4>
                  <h4>Total Price = <?php $plan_price; if($id==1){$plan_price=10000;} if($id==2) {$plan_price=25000;} if($id==3) {$plan_price=50000;} if($inp=="" || $inp==0 || $inp==null){$inp = 1;}  $total_price = $plan_price * $inp; echo $total_price;?></h4>
                   <br>
                  <button type="submit" class="btn btn-success" name="send_btn" >Continue To Payment</button>
