@@ -65,32 +65,32 @@ $school_id = $_SESSION['school_id'];?>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label> Exam Name <span class="login-danger">*</span></label>
-                                                <input name="exam_name" class="form-control" type="text" placeholder="Enter Exam Name">
+                                                <input required name="exam_name" class="form-control" type="text" placeholder="Enter Exam Name">
                                             </div>
                                         </div>
                                               
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Grade<span class="login-danger">*</span></label>
-                                                <input name="grade" class="form-control" type="number" min="1" max="10" placeholder="Enter Grade">
+                                                <input required name="grade" class="form-control" type="number" min="1" max="10" placeholder="Enter Grade">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Start Date<span class="login-danger">*</span></label>
-                                                <input name="start_date" class="form-control" type="date" placeholder="Start Date">
+                                                <input required name="start_date" class="form-control" type="date" placeholder="Start Date">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>End Date<span class="login-danger">*</span></label>
-                                                <input name="end_date" class="form-control" type="date" placeholder="End Date">
+                                                <input required name="end_date" class="form-control" type="date" placeholder="End Date">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Result Date<span class="login-danger">*</span></label>
-                                                <input name="result_date" class="form-control" type="date" placeholder="Result Date">
+                                                <input required name="result_date" class="form-control" type="date" placeholder="Result Date">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
